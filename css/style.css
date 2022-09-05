@@ -9,6 +9,11 @@
     --Light-Gray: hsl(0, 0%, 75%);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: Raleway;
     src: url(../font/Raleway-VariableFont_wght.ttf);
@@ -26,9 +31,32 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: "Open Sans";
+    color: var(--Very-Dark-Blue);
 }
 
 h1, h2, h3 {
     font-family: Raleway;
     font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Very-Dark-Blue);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 60px 0;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+ul li {
+    margin-right: 40px;
 }
