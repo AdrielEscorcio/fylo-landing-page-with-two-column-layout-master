@@ -1,0 +1,34 @@
+:root {
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../font/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Open Sans";
+}
+
+h1, h2, h3 {
+    font-family: Raleway;
+    font-weight: 700;
+}
