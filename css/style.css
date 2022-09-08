@@ -7,16 +7,21 @@
 
     --Light-Grayish-Blue: hsl(240, 75%, 98%);
     --Light-Gray: hsl(0, 0%, 75%);
+
+    --largura: 1440px;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
     font-family: Raleway;
     src: url(../font/Raleway-VariableFont_wght.ttf);
+    font-weight: 700;
+    
 }
 
 @font-face {
@@ -24,6 +29,7 @@
     src: url(../font/OpenSans-VariableFont_wdth\,wght.ttf);
     font-weight: 400;
 }
+
 
 body {
     display: flex;
@@ -36,8 +42,7 @@ body {
 
 h1, h2, h3 {
     font-family: Raleway;
-    font-weight: 700;
-    font-size: 36px;
+    font-size: 2.5rem;
 }
 
 a {
@@ -53,13 +58,15 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 60px;
+    padding: 60px 0;
+    
 }
 
 header > div {
     display: flex;
     justify-content: space-between;
     width: 90%;
+    max-width: var(--largura);
 }
 
 .nav {
@@ -74,28 +81,54 @@ header > div {
 
 main {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 60px;
     width: 100%;
+    margin-top: 40px;
 }
 
-section {
+main > section {
     display: flex;
     width: 90%;
+    max-width: var(--largura);
 }
 
 section > div {
     width: 50%;
     align-self: center;
-
 }
 
-section > div h2 {
+section > div h1,h2 {
     margin-bottom: 30px;
+    max-width: 650px;
+    line-height: 3.75rem;
 }
 
 section > div p {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    max-width: 520px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    padding: 20px 20px 15px;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid var(--Very-Dark-Blue);
+    height: 40px;
+}
+
+.bt-azul {
+    padding: 10px 45px;
+    background-color: var(--Bright-Blue);
+    color: var(--Light-Grayish-Blue);
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 41.6px;
+    border-color: var(--Bright-Blue);
 }
